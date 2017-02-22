@@ -13,6 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = str_replace("\n", " ", trim($event['message']['text']));
+			$text = "ทดสอบ"
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Python Execute
