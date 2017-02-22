@@ -14,14 +14,14 @@ def test():
 
 
 # map the inputs to the function blocks
-options = {"สวัสดี" : hello,
-           "หวัดดี" : hello,
-           "ดี" : hello,
-           "ดีจ้า" : hello,
-           "555" : haha,
-           "ทดสอบ" : test,
-           "test" : test,
-           " " : test,
+options = {"สวัสดี" : hello(),
+           "หวัดดี" : hello(),
+           "ดี" : hello(),
+           "ดีจ้า" : hello(),
+           "555" : haha(),
+           "ทดสอบ" : test(),
+           "test" : test(),
+           " " : test(),
            }
 if len(sys.argv) < 2:
   sys.exit(0)
