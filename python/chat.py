@@ -14,8 +14,5 @@ kernel = aiml.Kernel()
 kernel.learn("std-startup.xml")
 kernel.respond("load aiml b")
 
-if(message == "555"):
-  result = "ขำ";
-else:
-  result = "ยังไม่ได้ตั้งค่าไว้";
+result = kernel.respond(message)
 print ("%s" % result)
