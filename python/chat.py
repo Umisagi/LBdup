@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #-*-coding: utf-8 -*-
 
+import aiml
 import json
 import sys
 
