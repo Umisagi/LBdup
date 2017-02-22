@@ -15,11 +15,15 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			// Python Execute
+			$command = "LANG=en_US.UTF-8 PYTHONIOENCODING=utf-8 python3 ./python/chat.py " . escapeshellarg($text) . " 2>&1";
+ 			$response_message = shell_exec($command);
+ 			$response_message = trim($response_message);
 
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $response_message
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
