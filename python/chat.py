@@ -8,8 +8,8 @@ import sys
 if len(sys.argv) < 2:
   sys.exit(0)
 
-mes = sys.argv[1]
-message = ''.join(chr(i) for i in mes)
+message = sys.argv[1]
+
 
 if (message == "สวัสดี"):
     result = "สวัสดีครับ มีอะไรให้รับใช้ครับ"
@@ -22,4 +22,4 @@ elif (message == "ควย"):
 else:
     result = "ระบบไม่สามารถประมวลผลคำที่ท่านส่งมาได้ ขออภัยด้วยครับ"
 
-print (result+" "+message)
+print (str(message))
