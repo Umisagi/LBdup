@@ -11,12 +11,11 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text 
-			$text = str_replace("\n", " ", trim($event['message']['text']));
-			
+			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Python Execute
-			$command = "LANG=en_US.UTF-8 PYTHONIOENCODING=utf-8 python3 ./python/chat.py " . escapeshellarg($text) . " 2>&1";
+			$command = "python3 ./python/chat.py " . escapeshellarg($text) . " 2>&1";
  			$response_message = shell_exec($command);
  			$response_message = trim($response_message);
 
