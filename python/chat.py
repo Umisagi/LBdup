@@ -28,6 +28,6 @@ if len(sys.argv) < 2:
 
 message = sys.argv[1]
 
-option[message]()
+options[message]()
 
 print ("%s" % result)
