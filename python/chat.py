@@ -7,8 +7,10 @@ import sys
 
 if len(sys.argv) < 2:
   sys.exit(0)
-
+message = "อะไรนะ"
 message = sys.argv[1]
+
+
 if (message == "สวัสดี"):
     result = "สวัสดีครับ มีอะไรให้รับใช้ครับ"
 elif (message == "สวัสดี ครับ"):
