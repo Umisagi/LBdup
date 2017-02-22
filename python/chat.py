@@ -9,10 +9,9 @@ def hello():
     result = "สวัสดีเหี้ยไรสัส"
 def haha():
     result = "ตลกเหรอ"
-def even():
-    print "n is an even number\n"
-def prime():
-    print "n is a prime number\n"
+def test():
+    result = "ทดสอบมาทั้งวันแล้วนะ"
+
 
 # map the inputs to the function blocks
 options = {"สวัสดี" : hello,
