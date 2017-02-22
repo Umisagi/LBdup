@@ -9,6 +9,11 @@ if len(sys.argv) < 2:
   sys.exit(0)
 
 message = sys.argv[1]
+
+kernel = aiml.Kernel()
+kernel.learn("std-startup.xml")
+kernel.respond("load aiml b")
+
 if(message == "555"):
   result = "ขำ";
 else:
