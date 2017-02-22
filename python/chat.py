@@ -20,4 +20,4 @@ elif (message == "ควย"):
 else:
     result = "ระบบไม่สามารถประมวลผลคำที่ท่านส่งมาได้ ขออภัยด้วยครับ"
 
-print ("%s" % result)
+print ("%s , %s" % result,message)
