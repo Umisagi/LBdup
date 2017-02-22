@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Python Execute
-			$command = "LANG=th_TH.UTF-8 PYTHONIOENCODING=utf-8 python3 ./python/chat.py " . escapeshellarg($text) . " 2>&1";
+			$command = "LANG=th_TH.UTF-8 PYTHONIOENCODING=utf-8 python ./python/chat.py " . escapeshellarg($text) . " 2>&1";
  			$response_message = shell_exec($command);
  			$response_message = trim($response_message);
 
